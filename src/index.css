@@ -14,7 +14,8 @@ html {
   /* But we should not set it to 10px manuallly as user may change font size setting in browser and that might create issues */
   /* So instead we specify in % like below */
   /* 10px / 16px = 0.625 = 62.5% */
-  font-size: 62.5%;
+  /* Commenting below for now. Doesnt feel convinient with Tailwind */
+  /* font-size: 62.5%; */
 }
 
 body {
