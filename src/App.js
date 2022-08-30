@@ -1,3 +1,7 @@
-const App = () => <div>FP2DC</div>;
+import Recipes from "./components/features/Recipes/Recipes.component";
+
+const App = () => <div>
+    <Recipes />
+</div>;
 
 export default App;
