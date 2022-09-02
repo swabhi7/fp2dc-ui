@@ -1,3 +1,12 @@
+/* DESIGN DECISIONS */
+/* 
+Margin -
+mb-8
+mb-6
+mb-4
+mb2 
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -7,7 +7,7 @@ const Recipe = () => {
       <img
         src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_960_720.jpg"
         alt="food"
-        className="max-w-full mb-6"
+        className="max-w-full mb-8"
       />
       <div className="px-6">
         <div className="flex justify-between items-center mb-2">
@@ -16,13 +16,13 @@ const Recipe = () => {
           <div>Rating</div>
         </div>
         {/* TODO - Separate tags and tag component */}
-        <div className="mb-3">tags</div>
-        <p className="mb-3">
+        <div className="mb-4">tags</div>
+        <p className="mb-4">
           Dolor pariatur ea sunt id duis aliquip excepteur ea cillum velit.
           Incididunt magna adipisicing magna voluptate consectetur pariatur amet
           nisi do aliqua sit et proident.
         </p>
-        <ul className="mb-4 flex flex-col gap-2 font-semibold">
+        <ul className="mb-6 flex flex-col gap-2 font-semibold">
           {/* TODO - Add icons below */}
           <li>- American</li>
           <li>- 30 minutes</li>
