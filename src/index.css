@@ -24,3 +24,10 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/* Change the root element font size at various breakpoints */
+@layer base {
+  html {
+    @apply text-base lg:text-sm md:text-sm sm:text-sm;
+  }
+}
