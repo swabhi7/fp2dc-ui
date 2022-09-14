@@ -1,3 +1,4 @@
+import _ from "lodash";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRecipes } from "../../../store/actionDispatchers/recipes.actionDispatcher";
@@ -18,7 +19,8 @@ const Recipes = () => {
   return (
     <Container>
       <div className="grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-8 mt-10">
-        {recipes.map(
+        {_.map(
+          recipes,
           ({
             _id,
             imageUrl,
