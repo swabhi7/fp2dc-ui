@@ -1,32 +1,31 @@
 import React from "react";
 import Card from "../../utilities/Card.component";
 
-const Recipe = () => {
+const Recipe = ({
+  imageUrl,
+  title,
+  description,
+  cookingTime,
+  difficulty,
+  serves,
+}) => {
   return (
     <Card>
-      <img
-        src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_960_720.jpg"
-        alt="food"
-        className="max-w-full mb-8"
-      />
+      <img src={imageUrl} alt={title} className="max-w-full mb-8" />
       <div className="px-6">
         <div className="flex justify-between items-center mb-2">
-          <h2 className="text-xl font-bold">Crispy Aloo Burger</h2>
+          <h2 className="text-xl font-bold">{title}</h2>
           {/* TODO - Separate Rating component */}
           <div>Rating</div>
         </div>
         {/* TODO - Separate tags and tag component */}
         <div className="mb-4">tags</div>
-        <p className="mb-4">
-          Dolor pariatur ea sunt id duis aliquip excepteur ea cillum velit.
-          Incididunt magna adipisicing magna voluptate consectetur pariatur amet
-          nisi do aliqua sit et proident.
-        </p>
+        <p className="mb-4">{description}</p>
         <ul className="mb-6 flex flex-col gap-2 font-semibold">
           {/* TODO - Add icons below */}
-          <li>- American</li>
-          <li>- 30 minutes</li>
-          <li>- Easy</li>
+          <li>- {cookingTime} minutes</li>
+          <li>- {difficulty}</li>
+          <li>- {serves}</li>
         </ul>
       </div>
       <button className="w-full bg-lime-600 py-4 text-white font-bold tracking-wider">

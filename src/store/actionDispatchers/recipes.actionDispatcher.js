@@ -9,8 +9,10 @@ const fetchRecipes = () => async (dispatch) => {
   try {
     dispatch({ type: FETCH_RECIPES_REQUESTED });
     // TODO : Use some kind of env variables while making API calls and create configurable axios instance
-    const response = await axios.get("http://localhost:3333/api/recipes");
-    dispatch({ type: FETCH_RECIPES_PASSED, payload: { recipes: response } });
+    const { data: recipes } = await axios.get(
+      "http://localhost:3333/api/recipes"
+    );
+    dispatch({ type: FETCH_RECIPES_PASSED, payload: { recipes } });
   } catch (error) {
     dispatch({ type: FETCH_RECIPES_FAILED, payload: { error } });
   }
