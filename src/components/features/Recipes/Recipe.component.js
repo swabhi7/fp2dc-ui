@@ -1,3 +1,4 @@
+import _ from "lodash";
 import React from "react";
 import Card from "../../utilities/Card.component";
 
@@ -20,7 +21,12 @@ const Recipe = ({
         </div>
         {/* TODO - Separate tags and tag component */}
         <div className="mb-4">tags</div>
-        <p className="mb-4">{description}</p>
+        <p className="mb-4 leading-relaxed">
+          {_.truncate(description, { length: 120 })}
+          <button className="bg-lime-600 text-white text-xs font-bold px-2 rounded">
+            &rarr;
+          </button>
+        </p>
         <ul className="mb-6 flex flex-col gap-2 font-semibold">
           {/* TODO - Add icons below */}
           <li>- {cookingTime} minutes</li>
