@@ -1,5 +1,5 @@
 import _ from "lodash";
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../utilities/Card.component";
 
 const Recipe = ({
@@ -10,6 +10,11 @@ const Recipe = ({
   difficulty,
   serves,
 }) => {
+  const maximumAllowedLengthForDescription = 120;
+  const isMoreLessButtonRequired =
+    _.size(description) > maximumAllowedLengthForDescription;
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
   return (
     <Card>
       <img src={imageUrl} alt={title} className="max-w-full mb-8" />
@@ -22,10 +27,19 @@ const Recipe = ({
         {/* TODO - Separate tags and tag component */}
         <div className="mb-4">tags</div>
         <p className="mb-4 leading-relaxed">
-          {_.truncate(description, { length: 120 })}
-          <button className="bg-lime-600 text-white text-xs font-bold px-2 rounded">
-            &rarr;
-          </button>
+          {showFullDescription
+            ? description
+            : _.truncate(description, {
+                length: maximumAllowedLengthForDescription,
+              })}
+          {isMoreLessButtonRequired && (
+            <button
+              className="bg-lime-600 text-white text-xs font-bold px-2 rounded"
+              onClick={() => setShowFullDescription(!showFullDescription)}
+            >
+              {showFullDescription ? <span>&larr;</span> : <span>&rarr;</span>}
+            </button>
+          )}
         </p>
         <ul className="mb-6 flex flex-col gap-2 font-semibold">
           {/* TODO - Add icons below */}
