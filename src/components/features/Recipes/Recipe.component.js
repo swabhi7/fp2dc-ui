@@ -1,6 +1,7 @@
 import _ from "lodash";
 import React, { useState } from "react";
 import Card from "../../utilities/Card.component";
+import Tags from "./Tags.component";
 
 const Recipe = ({
   imageUrl,
@@ -9,6 +10,7 @@ const Recipe = ({
   cookingTime,
   difficulty,
   serves,
+  tags
 }) => {
   const maximumAllowedLengthForDescription = 120;
   const isMoreLessButtonRequired =
@@ -25,7 +27,9 @@ const Recipe = ({
           <div>Rating</div>
         </div>
         {/* TODO - Separate tags and tag component */}
-        <div className="mb-4">tags</div>
+        <div className="mb-4">
+          <Tags tags={tags} />
+        </div>
         <p className="mb-4 leading-relaxed">
           {showFullDescription
             ? description
