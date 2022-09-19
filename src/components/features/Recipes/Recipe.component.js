@@ -1,6 +1,6 @@
 import _ from "lodash";
 import React, { useState } from "react";
-import { FaClock, FaTachometerAlt, FaUtensils } from 'react-icons/fa';
+import { FaClock, FaTachometerAlt, FaUtensils } from "react-icons/fa";
 import Card from "../../utilities/Card.component";
 import Tags from "./Tags.component";
 
@@ -11,7 +11,7 @@ const Recipe = ({
   cookingTime,
   difficulty,
   serves,
-  tags
+  tags,
 }) => {
   const maximumAllowedLengthForDescription = 120;
   const isMoreLessButtonRequired =
@@ -31,7 +31,7 @@ const Recipe = ({
         <div className="mb-4">
           <Tags tags={tags} />
         </div>
-        <p className="mb-4 leading-relaxed">
+        <p className="mb-6 leading-relaxed">
           {showFullDescription
             ? description
             : _.truncate(description, {
@@ -46,11 +46,20 @@ const Recipe = ({
             </button>
           )}
         </p>
-        <ul className="mb-6 flex flex-col gap-2 font-semibold">
-          {/* TODO - Add icons below */}
-          <li><FaClock className="inline-block" /> {cookingTime} minutes</li>
-          <li><FaTachometerAlt className="inline-block" /> {difficulty}</li>
-          <li><FaUtensils className="inline-block" /> {serves}</li>
+        <ul className="mb-8 flex flex-col gap-2 font-semibold">
+          {/* TODO - Refactor the duplicate code below (classnames) */}
+          <li className="flex gap-3 items-center mb-1">
+            <FaClock className="inline-block fill-lime-600 text-2xl" />{" "}
+            <span>{cookingTime} minutes</span>
+          </li>
+          <li className="flex gap-3 items-center mb-1">
+            <FaTachometerAlt className="inline-block fill-lime-600 text-2xl" />{" "}
+            <span>{difficulty}</span>
+          </li>
+          <li className="flex gap-3 items-center mb-1">
+            <FaUtensils className="inline-block fill-lime-600 text-2xl" />{" "}
+            <span>{serves}</span>
+          </li>
         </ul>
       </div>
       <button className="w-full bg-lime-600 py-4 text-white font-bold tracking-wider">
