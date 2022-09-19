@@ -1,9 +1,10 @@
 import React from "react";
 import _ from "lodash";
+import Tag from "./Tag.component";
 
 const Tags = ({ tags }) => {
-  return _.map(_.take(tags, 3), (tag) => (
-    <span key={tag._id}>{tag.value}</span>
+  return _.map(_.take(tags, 3), ({ value, _id }) => (
+    <Tag key={_id} value={value} />
   ));
 };
 
