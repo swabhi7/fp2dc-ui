@@ -1,5 +1,6 @@
 import _ from "lodash";
 import React, { useState } from "react";
+import { FaClock, FaTachometerAlt, FaUtensils } from 'react-icons/fa';
 import Card from "../../utilities/Card.component";
 import Tags from "./Tags.component";
 
@@ -47,9 +48,9 @@ const Recipe = ({
         </p>
         <ul className="mb-6 flex flex-col gap-2 font-semibold">
           {/* TODO - Add icons below */}
-          <li>- {cookingTime} minutes</li>
-          <li>- {difficulty}</li>
-          <li>- {serves}</li>
+          <li><FaClock className="inline-block" /> {cookingTime} minutes</li>
+          <li><FaTachometerAlt className="inline-block" /> {difficulty}</li>
+          <li><FaUtensils className="inline-block" /> {serves}</li>
         </ul>
       </div>
       <button className="w-full bg-lime-600 py-4 text-white font-bold tracking-wider">
