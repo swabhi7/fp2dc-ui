@@ -40,10 +40,10 @@ const Recipe = ({
               })}
           {isMoreLessButtonRequired && (
             <button
-              className="bg-lime-600 text-white text-xs font-bold px-2 rounded"
+              className="bg-lime-600 text-white text-xs font-bold px-1.5 rounded-full"
               onClick={() => setShowFullDescription(!showFullDescription)}
             >
-              {showFullDescription ? <span>&larr;</span> : <span>&rarr;</span>}
+              {showFullDescription ? <span>x</span> : <span>...</span>}
             </button>
           )}
         </p>
