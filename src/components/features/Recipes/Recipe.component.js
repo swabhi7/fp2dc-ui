@@ -4,6 +4,7 @@ import { FaClock, FaTachometerAlt, FaUtensils } from "react-icons/fa";
 import Card from "../../utilities/Card.component";
 import Tags from "./Tags.component";
 import classes from "./Recipe.module.css";
+import Rating from "./Rating.component";
 
 const Recipe = ({
   imageUrl,
@@ -13,6 +14,7 @@ const Recipe = ({
   difficulty,
   serves,
   tags,
+  reviews,
 }) => {
   const maximumAllowedLengthForDescription = 120;
   const isMoreLessButtonRequired =
@@ -25,8 +27,7 @@ const Recipe = ({
       <div className="px-6">
         <div className="flex justify-between items-center mb-2">
           <h2 className="text-lg font-bold">{title}</h2>
-          {/* TODO - Separate Rating component */}
-          <div>Rating</div>
+          <Rating reviews={reviews} />
         </div>
         <div className="mb-4">
           <Tags tags={tags} />
