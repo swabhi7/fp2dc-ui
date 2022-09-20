@@ -24,7 +24,7 @@ const Recipe = ({
       <img src={imageUrl} alt={title} className="max-w-full mb-8" />
       <div className="px-6">
         <div className="flex justify-between items-center mb-2">
-          <h2 className="text-xl font-bold">{title}</h2>
+          <h2 className="text-lg font-bold">{title}</h2>
           {/* TODO - Separate Rating component */}
           <div>Rating</div>
         </div>
