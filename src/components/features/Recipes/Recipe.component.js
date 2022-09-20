@@ -28,7 +28,6 @@ const Recipe = ({
           {/* TODO - Separate Rating component */}
           <div>Rating</div>
         </div>
-        {/* TODO - Separate tags and tag component */}
         <div className="mb-4">
           <Tags tags={tags} />
         </div>
@@ -48,7 +47,6 @@ const Recipe = ({
           )}
         </p>
         <ul className="mb-8 flex flex-col gap-2 font-semibold">
-          {/* TODO - Refactor the duplicate code below (classnames) */}
           <li>
             <FaClock className={classes.icon} title="Cooking Time" />
             <span>{cookingTime} minutes</span>
