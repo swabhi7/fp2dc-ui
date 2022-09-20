@@ -49,15 +49,15 @@ const Recipe = ({
         <ul className="mb-8 flex flex-col gap-2 font-semibold">
           {/* TODO - Refactor the duplicate code below (classnames) */}
           <li className="flex gap-3 items-center mb-1">
-            <FaClock className="inline-block fill-lime-600 text-2xl" />{" "}
+            <FaClock className="inline-block fill-lime-600 text-2xl" />
             <span>{cookingTime} minutes</span>
           </li>
           <li className="flex gap-3 items-center mb-1">
-            <FaTachometerAlt className="inline-block fill-lime-600 text-2xl" />{" "}
+            <FaTachometerAlt className="inline-block fill-lime-600 text-2xl" />
             <span>{difficulty}</span>
           </li>
           <li className="flex gap-3 items-center mb-1">
-            <FaUtensils className="inline-block fill-lime-600 text-2xl" />{" "}
+            <FaUtensils className="inline-block fill-lime-600 text-2xl" />
             <span>{serves}</span>
           </li>
         </ul>
