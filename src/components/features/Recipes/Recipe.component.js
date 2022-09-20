@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaClock, FaTachometerAlt, FaUtensils } from "react-icons/fa";
 import Card from "../../utilities/Card.component";
 import Tags from "./Tags.component";
+import classes from "./Recipe.module.css";
 
 const Recipe = ({
   imageUrl,
@@ -48,16 +49,16 @@ const Recipe = ({
         </p>
         <ul className="mb-8 flex flex-col gap-2 font-semibold">
           {/* TODO - Refactor the duplicate code below (classnames) */}
-          <li className="flex gap-3 items-center mb-1">
-            <FaClock className="inline-block fill-lime-600 text-2xl" title="Cooking Time" />
+          <li>
+            <FaClock className={classes.icon} title="Cooking Time" />
             <span>{cookingTime} minutes</span>
           </li>
-          <li className="flex gap-3 items-center mb-1">
-            <FaTachometerAlt className="inline-block fill-lime-600 text-2xl" title="Difficulty" />
+          <li>
+            <FaTachometerAlt className={classes.icon} title="Difficulty" />
             <span>{difficulty}</span>
           </li>
-          <li className="flex gap-3 items-center mb-1">
-            <FaUtensils className="inline-block fill-lime-600 text-2xl" title="Serves" />
+          <li>
+            <FaUtensils className={classes.icon} title="Serves" />
             <span>{serves}</span>
           </li>
         </ul>

@@ -1,0 +1,11 @@
+@tailwind base;
+
+@layer base {
+  ul li {
+    @apply flex gap-3 items-center mb-1;
+  }
+
+  .icon {
+    @apply inline-block fill-lime-600 text-2xl;
+  }
+}
