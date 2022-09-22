@@ -29,7 +29,8 @@ const Recipes = () => {
             cookingTime,
             difficulty,
             serves,
-            tags
+            tags,
+            reviews
           }) => (
             <Recipe
               key={_id}
@@ -40,6 +41,7 @@ const Recipes = () => {
               difficulty={difficulty}
               serves={serves}
               tags={tags}
+              reviews={reviews}
             />
           )
         )}
