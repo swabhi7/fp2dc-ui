@@ -1,7 +1,11 @@
+import Navbar from "./components/features/Navbar/Navbar.component";
 import Recipes from "./components/features/Recipes/Recipes.component";
 
-const App = () => <div>
+const App = () => (
+  <div>
+    <Navbar />
     <Recipes />
-</div>;
+  </div>
+);
 
 export default App;
