@@ -1,0 +1,27 @@
+@tailwind base;
+
+@layer base {
+  .navbar {
+    @apply flex justify-around items-center min-w-full bg-lime-600 text-white h-16;
+  }
+
+  .logo {
+    @apply font-bold;
+  }
+
+  .search-box {
+    @apply hidden;
+  }
+
+  .search-icon {
+    @apply font-bold;
+  }
+
+  .menu-icon {
+    @apply font-bold;
+  }
+
+  .menu-list {
+    @apply hidden;
+  }
+}
