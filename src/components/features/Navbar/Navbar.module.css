@@ -29,10 +29,10 @@
     @apply hidden;
   }
 
-  /* md scrrens */
-  @media (min-width: 768px) {
+  /* sm scrrens */
+  @media (min-width: 640px) {
     .navbar {
-      @apply px-16;
+      @apply px-12;
     }
 
     .menu-list {
@@ -41,6 +41,13 @@
 
     .menu-icon {
       @apply hidden;
+    }
+  }
+
+  /* md scrrens */
+  @media (min-width: 768px) {
+    .navbar {
+      @apply px-16;
     }
   }
 }
