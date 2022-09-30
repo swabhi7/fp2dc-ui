@@ -2,7 +2,7 @@
 
 @layer base {
   .navbar {
-    @apply flex justify-around items-center min-w-full bg-lime-600 text-white h-16 text-lg;
+    @apply flex justify-between px-8 items-center min-w-full bg-lime-600 text-white h-16 text-lg;
   }
 
   .logo {
