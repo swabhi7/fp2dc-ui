@@ -6,15 +6,15 @@ const Navbar = () => {
   return (
     <div className={classes["navbar"]}>
       <div className={classes["logo"]}>&lt; FP2DC / &gt;</div>
-      <div className={classes["search"]}>
-        <input
-          type="text"
-          placeholder="Search"
-          className={classes["search-box"]}
-        />
-        <FaSearch className={classes["search-icon"]} />
-      </div>
       <div className={classes["menu"]}>
+        <div className={classes["search"]}>
+          <input
+            type="text"
+            placeholder="Search"
+            className={classes["search-box"]}
+          />
+          <FaSearch className={classes["search-icon"]} />
+        </div>
         <FaBars className={classes["menu-icon"]} />
         <ul className={classes["menu-list"]}>
           <li>Recipes</li>

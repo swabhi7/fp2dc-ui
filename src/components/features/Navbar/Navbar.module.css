@@ -2,11 +2,15 @@
 
 @layer base {
   .navbar {
-    @apply flex justify-around items-center min-w-full bg-lime-600 text-white h-16;
+    @apply flex justify-around items-center min-w-full bg-lime-600 text-white h-16 text-lg;
   }
 
   .logo {
     @apply font-bold;
+  }
+
+  .menu {
+    @apply flex gap-2;
   }
 
   .search-box {
