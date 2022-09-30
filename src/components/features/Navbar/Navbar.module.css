@@ -18,7 +18,7 @@
   }
 
   .search-icon {
-    @apply font-bold;
+    @apply inline-block font-bold;
   }
 
   .menu-icon {
@@ -48,6 +48,21 @@
   @media (min-width: 768px) {
     .navbar {
       @apply px-16;
+    }
+  }
+
+  /* lg scrrens */
+  @media (min-width: 1024px) {
+    .navbar {
+      @apply px-24;
+    }
+
+    .search-box {
+      @apply inline-block px-2 rounded;
+    }
+
+    .search-icon {
+      @apply ml-[-10%] text-gray-500;
     }
   }
 }
