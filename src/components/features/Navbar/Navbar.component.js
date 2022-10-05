@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars, FaSearch } from "react-icons/fa";
+import Modal from "../../utilities/Modal.component";
 import classes from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -7,6 +8,7 @@ const Navbar = () => {
     <div className={classes["navbar"]}>
       <div className={classes["logo"]}>&lt; FP2DC / &gt;</div>
       <div className={classes["menu"]}>
+        <Modal>Modal</Modal>
         <div className={classes["search"]}>
           <input
             type="text"
