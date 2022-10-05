@@ -1,0 +1,22 @@
+@tailwind base;
+
+@layer base {
+  .search-box {
+    @apply hidden;
+  }
+
+  .search-icon {
+    @apply inline-block font-bold;
+  }
+
+  /* lg scrrens */
+  @media (min-width: 1024px) {
+    .search-box {
+      @apply inline-block px-2 rounded;
+    }
+
+    .search-icon {
+      @apply ml-[-10%] text-gray-500;
+    }
+  }
+}

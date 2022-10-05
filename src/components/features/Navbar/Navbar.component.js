@@ -1,7 +1,8 @@
 import React from "react";
-import { FaBars, FaSearch } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import Modal from "../../utilities/Modal.component";
 import classes from "./Navbar.module.css";
+import Search from "./Search.component";
 
 const Navbar = () => {
   return (
@@ -9,14 +10,7 @@ const Navbar = () => {
       <div className={classes["logo"]}>&lt; FP2DC / &gt;</div>
       <div className={classes["menu"]}>
         <Modal>Modal</Modal>
-        <div className={classes["search"]}>
-          <input
-            type="text"
-            placeholder="Search"
-            className={classes["search-box"]}
-          />
-          <FaSearch className={classes["search-icon"]} />
-        </div>
+        <Search />
         <FaBars className={classes["menu-icon"]} />
         <ul className={classes["menu-list"]}>
           <li>Recipes</li>

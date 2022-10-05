@@ -13,14 +13,6 @@
     @apply flex items-center gap-4;
   }
 
-  .search-box {
-    @apply hidden;
-  }
-
-  .search-icon {
-    @apply inline-block font-bold;
-  }
-
   .menu-icon {
     @apply font-bold;
   }
@@ -55,14 +47,6 @@
   @media (min-width: 1024px) {
     .navbar {
       @apply px-24;
-    }
-
-    .search-box {
-      @apply inline-block px-2 rounded;
-    }
-
-    .search-icon {
-      @apply ml-[-10%] text-gray-500;
     }
   }
 }
