@@ -9,7 +9,9 @@ const Navbar = () => {
     <div className={classes["navbar"]}>
       <div className={classes["logo"]}>&lt; FP2DC / &gt;</div>
       <div className={classes["menu"]}>
-        <Modal>Modal</Modal>
+        <Modal>
+          <Search forseExpand={true} />
+        </Modal>
         <Search />
         <FaBars className={classes["menu-icon"]} />
         <ul className={classes["menu-list"]}>
