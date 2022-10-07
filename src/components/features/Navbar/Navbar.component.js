@@ -20,7 +20,10 @@ const Navbar = () => {
         <Search searchExpandHandler={() => setShowModal(true)} />
         {showSidebar && (
           <Sidebar onDismiss={() => setShowSidebar(false)}>
-            <Menu />
+            <Menu
+              insideSidebar={true}
+              sidebarCloseHandler={() => setShowSidebar(false)}
+            />
           </Sidebar>
         )}
         <Menu showSidebarHandler={() => setShowSidebar(true)} />

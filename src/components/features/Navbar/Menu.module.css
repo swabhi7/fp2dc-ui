@@ -9,6 +9,14 @@
     @apply hidden;
   }
 
+  .menu-icon__inside-sidebar {
+    @apply hidden;
+  }
+
+  .menu-list__inside-sidebar {
+    @apply flex flex-col gap-8 justify-center items-center text-white font-bold;
+  }
+
   /* sm scrrens */
   @media (min-width: 640px) {
     .menu-list {
