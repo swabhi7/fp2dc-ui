@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
 import Modal from "../../utilities/Modal.component";
-import Sidebar from "../../utilities/Sidebar.component";
+import Menu from "./Menu.component";
 import classes from "./Navbar.module.css";
 import Search from "./Search.component";
 
@@ -17,15 +16,8 @@ const Navbar = () => {
           </Modal>
         )}
         <Search searchExpandHandler={() => setShowModal(true)} />
-        <Sidebar></Sidebar>
-        <FaBars className={classes["menu-icon"]} />
-        <ul className={classes["menu-list"]}>
-          <li>Recipes</li>
-          <li>Chef Says</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Sign In</li>
-        </ul>
+        {/* <Sidebar></Sidebar> */}
+        <Menu />
       </div>
     </div>
   );

@@ -1,6 +1,10 @@
 @tailwind base;
 
 @layer base {
+  .menu {
+    @apply flex items-center gap-4;
+  }
+
   .navbar {
     @apply flex justify-between px-8 items-center min-w-full bg-lime-600 text-white h-16 text-lg;
   }
@@ -9,30 +13,10 @@
     @apply font-bold;
   }
 
-  .menu {
-    @apply flex items-center gap-4;
-  }
-
-  .menu-icon {
-    @apply font-bold;
-  }
-
-  .menu-list {
-    @apply hidden;
-  }
-
   /* sm scrrens */
   @media (min-width: 640px) {
     .navbar {
       @apply px-12;
-    }
-
-    .menu-list {
-      @apply flex gap-8 items-center text-sm;
-    }
-
-    .menu-icon {
-      @apply hidden;
     }
   }
 

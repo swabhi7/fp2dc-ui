@@ -1,0 +1,22 @@
+@tailwind base;
+
+@layer base {
+  .menu-icon {
+    @apply font-bold;
+  }
+
+  .menu-list {
+    @apply hidden;
+  }
+
+  /* sm scrrens */
+  @media (min-width: 640px) {
+    .menu-list {
+      @apply flex gap-8 items-center text-sm;
+    }
+
+    .menu-icon {
+      @apply hidden;
+    }
+  }
+}
