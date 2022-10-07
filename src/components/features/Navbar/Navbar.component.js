@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Modal from "../../utilities/Modal.component";
 import classes from "./Navbar.module.css";
 import Search from "./Search.component";
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className={classes["navbar"]}>
       <div className={classes["logo"]}>&lt; FP2DC / &gt;</div>
       <div className={classes["menu"]}>
-        <Modal>
-          <Search forseExpand={true} />
-        </Modal>
-        <Search />
+        {showModal && (
+          <Modal onDismiss={() => setShowModal(false)}>
+            <Search forseExpand={true} />
+          </Modal>
+        )}
+        <Search searchExpandHandler={() => setShowModal(true)} />
         <FaBars className={classes["menu-icon"]} />
         <ul className={classes["menu-list"]}>
           <li>Recipes</li>

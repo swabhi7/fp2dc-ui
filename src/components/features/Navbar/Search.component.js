@@ -1,8 +1,7 @@
-import React from "react";
 import { FaSearch } from "react-icons/fa";
 import classes from "./Search.module.css";
 
-const Search = ({ forseExpand = false }) => {
+const Search = ({ forseExpand = false, searchExpandHandler }) => {
   return (
     <div
       // If forseExpand is true then it means this will be inside modal, so change the styling accordingly
@@ -22,6 +21,7 @@ const Search = ({ forseExpand = false }) => {
         }`}
       />
       <FaSearch
+        onClick={searchExpandHandler}
         className={`${
           forseExpand === false
             ? classes["search-icon"]
