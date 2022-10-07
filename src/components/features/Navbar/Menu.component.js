@@ -2,10 +2,10 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import classes from "./Menu.module.css";
 
-const Menu = () => {
+const Menu = ({ showSidebarHandler }) => {
   return (
     <>
-      <FaBars className={classes["menu-icon"]} />
+      <FaBars className={classes["menu-icon"]} onClick={showSidebarHandler} />
       <ul className={classes["menu-list"]}>
         <li>Recipes</li>
         <li>Chef Says</li>
