@@ -1,0 +1,36 @@
+@tailwind base;
+
+@layer base {
+  .menu {
+    @apply flex items-center gap-4;
+  }
+
+  .navbar {
+    @apply flex justify-between px-8 items-center min-w-full bg-lime-600 text-white h-16 text-lg;
+  }
+
+  .logo {
+    @apply font-bold;
+  }
+
+  /* sm scrrens */
+  @media (min-width: 640px) {
+    .navbar {
+      @apply px-12;
+    }
+  }
+
+  /* md scrrens */
+  @media (min-width: 768px) {
+    .navbar {
+      @apply px-16;
+    }
+  }
+
+  /* lg scrrens */
+  @media (min-width: 1024px) {
+    .navbar {
+      @apply px-24;
+    }
+  }
+}
