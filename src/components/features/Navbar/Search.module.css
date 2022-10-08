@@ -1,0 +1,34 @@
+@tailwind base;
+
+@layer base {
+  .search__forse-expand {
+    @apply w-full;
+  }
+
+  .search-box {
+    @apply hidden;
+  }
+
+  .search-icon {
+    @apply inline-block font-bold;
+  }
+
+  .search-box__forse-expand {
+    @apply inline-block px-2 py-1 rounded w-full;
+  }
+
+  .search-icon__forse-expand {
+    @apply inline-block ml-[-10%] text-gray-500;
+  }
+
+  /* lg scrrens */
+  @media (min-width: 1024px) {
+    .search-box {
+      @apply inline-block px-2 py-1 rounded;
+    }
+
+    .search-icon {
+      @apply ml-[-10%] text-gray-500;
+    }
+  }
+}

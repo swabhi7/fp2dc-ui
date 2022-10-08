@@ -1,3 +1,12 @@
+/* DESIGN DECISIONS */
+/* 
+Margin -
+mb-8
+mb-6
+mb-4
+mb2 
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,4 +32,11 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+/* Change the root element font size at various breakpoints */
+@layer base {
+  html {
+    @apply text-base lg:text-sm md:text-sm sm:text-sm;
+  }
 }
