@@ -40,7 +40,7 @@ const Recipe = ({
               })}
           {isMoreLessButtonRequired && (
             <button
-              className="bg-lime-600 text-white text-xs font-bold px-1.5 rounded-full"
+              className="bg-[color:var(--color-primary)] text-white text-xs font-bold px-1.5 rounded-full"
               onClick={() => setShowFullDescription(!showFullDescription)}
             >
               {showFullDescription ? <span>x</span> : <span>...</span>}
@@ -62,7 +62,7 @@ const Recipe = ({
           </li>
         </ul>
       </div>
-      <button className="w-full bg-lime-600 py-4 text-white font-bold tracking-wider">
+      <button className="w-full bg-[color:var(--color-primary)] py-4 text-white font-bold tracking-wider">
         View Recipe
       </button>
     </Card>

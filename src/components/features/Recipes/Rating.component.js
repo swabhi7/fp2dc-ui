@@ -29,7 +29,7 @@ const Rating = ({ reviews }) => {
         ))}
       </>
       <div>
-        <span className="font-bold text-lime-600">{rating}</span> ({numberOfReviews})
+        <span className="font-bold text-[color:var(--color-primary)]">{rating}</span> ({numberOfReviews})
       </div>
     </div>
   );

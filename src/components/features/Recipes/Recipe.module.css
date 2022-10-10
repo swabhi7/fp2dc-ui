@@ -6,6 +6,6 @@
   }
 
   .icon {
-    @apply inline-block fill-lime-600 text-2xl;
+    @apply inline-block fill-[color:var(--color-primary)] text-2xl;
   }
 }

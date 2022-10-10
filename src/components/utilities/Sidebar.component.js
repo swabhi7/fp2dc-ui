@@ -10,7 +10,7 @@ const Sidebar = ({ children, onDismiss }) => {
         onClick={onDismiss}
       ></div>
       {/* Sidebar content */}
-      <div className="fixed top-0 right-0 w-[50%] h-full bg-lime-600 p-2 flex justify-center items-center">
+      <div className="fixed top-0 right-0 w-[50%] h-full bg-[color:var(--color-primary)] p-2 flex justify-center items-center">
         {children}
       </div>
     </>,

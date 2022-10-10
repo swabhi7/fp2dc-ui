@@ -40,3 +40,8 @@ body {
     @apply text-base lg:text-sm md:text-sm sm:text-sm;
   }
 }
+
+/* Global CSS Variables */
+:root {
+  --color-primary: #65a30d;
+}
