@@ -43,5 +43,6 @@ body {
 
 /* Global CSS Variables */
 :root {
-  --color-primary: #65a30d;
+  --color-primary: #047C03;
+  --color-secondary: #02504A;
 }
