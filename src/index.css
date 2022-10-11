@@ -1,10 +1,79 @@
 /* DESIGN DECISIONS */
 /* 
 Margin -
-mb-8
-mb-6
+--------
+mt-10
+
+mr-4
+
+mb-1
+mb-2
 mb-4
-mb2 
+mb-6
+mb-8
+
+Padding -
+---------
+p-1
+p-2
+
+px-1.5
+px-2
+px-4
+px-6
+px-8
+px-10
+px-12
+px-16
+px-24
+
+py-1
+py-4
+
+Font Size -
+-----------
+text-xs
+text-sm
+text-base
+text-lg
+text-2xl
+
+Font Weight -
+-------------
+font-bold
+font-semibold
+
+Flex Gap -
+----------
+gap-2
+gap-3
+gap-4
+gap-8
+
+Border Radius -
+---------------
+rounded
+rounded-lg
+rounded-full
+
+Line Height -
+-------------
+leading-relaxed
+
+Letter Spacing -
+----------------
+tracking-wider
+tracking-wide
+
+Text Color -
+------------
+text-gray-500
+text-white
+
+Shadow -
+--------
+shadow-2xl
+
  */
 
 @tailwind base;
