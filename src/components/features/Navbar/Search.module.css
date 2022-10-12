@@ -24,11 +24,11 @@
   /* lg scrrens */
   @media (min-width: 1024px) {
     .search-box {
-      @apply inline-block px-2 py-1 rounded;
+      @apply inline-block px-2 py-1 rounded-lg bg-transparent border border-white text-sm placeholder:text-white;
     }
 
     .search-icon {
-      @apply ml-[-10%] text-gray-500;
+      @apply ml-[-13%] text-white text-base;
     }
   }
 }
