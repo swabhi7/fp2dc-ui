@@ -1,6 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import classes from "./Rating.module.css";
 
 // NOTE - What exactly should be input here to make this component more reusable?
 const Rating = ({ reviews }) => {
@@ -15,21 +16,22 @@ const Rating = ({ reviews }) => {
   const emptyStars = 5 - fullStars - halfStars;
 
   return (
-    <div className="text-xs text-center">
-      <>
+    <div className={classes["rating"]}>
+      <div>
         {_.map(Array(fullStars), (value, index) => (
           // NOTE - Is there any issue with using key as index? Check.
-          <FaStar key={index} className="inline-block" />
+          <FaStar key={index} className="" />
         ))}
         {_.map(Array(halfStars), (value, index) => (
-          <FaStarHalfAlt key={index} className="inline-block" />
+          <FaStarHalfAlt key={index} className="" />
         ))}
         {_.map(Array(emptyStars), (value, index) => (
-          <FaRegStar key={index} className="inline-block" />
+          <FaRegStar key={index} className="" />
         ))}
-      </>
+      </div>
       <div>
-        <span className="font-bold text-lime-600">{rating}</span> ({numberOfReviews})
+        <span className={classes["rating-text"]}>{rating}</span> (
+        {numberOfReviews})
       </div>
     </div>
   );

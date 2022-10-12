@@ -1,11 +1,8 @@
 import React from "react";
+import classes from "./Tag.module.css";
 
 const Tag = ({ value }) => {
-  return (
-    <span className="bg-lime-600 text-xs font-bold text-white mr-4 p-1 tracking-wide rounded cursor-pointer">
-      #{value}
-    </span>
-  );
+  return <span className={classes["tag"]}>#{value}</span>;
 };
 
 export default Tag;

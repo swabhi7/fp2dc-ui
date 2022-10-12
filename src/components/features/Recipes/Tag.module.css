@@ -1,0 +1,7 @@
+@tailwind base;
+
+@layer base {
+  .tag {
+    @apply bg-[color:var(--color-secondary)] text-xs font-bold text-white mr-4 p-1 tracking-wide rounded cursor-pointer;
+  }
+}

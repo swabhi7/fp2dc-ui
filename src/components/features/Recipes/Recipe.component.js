@@ -23,16 +23,16 @@ const Recipe = ({
 
   return (
     <Card>
-      <img src={imageUrl} alt={title} className="max-w-full mb-8" />
-      <div className="px-6">
-        <div className="flex justify-between items-center mb-2">
-          <h2 className="text-lg font-bold">{title}</h2>
+      <img src={imageUrl} alt={title} className={classes["recipe-image"]} />
+      <div className={classes["recipe-body"]}>
+        <div className={classes["recipe-body-header"]}>
+          <h2>{title}</h2>
           <Rating reviews={reviews} />
         </div>
-        <div className="mb-4">
+        <div className={classes["recipe-body-tags"]}>
           <Tags tags={tags} />
         </div>
-        <p className="mb-6 leading-relaxed">
+        <p className={classes["recipe-body-description"]}>
           {showFullDescription
             ? description
             : _.truncate(description, {
@@ -40,14 +40,13 @@ const Recipe = ({
               })}
           {isMoreLessButtonRequired && (
             <button
-              className="bg-lime-600 text-white text-xs font-bold px-1.5 rounded-full"
               onClick={() => setShowFullDescription(!showFullDescription)}
             >
               {showFullDescription ? <span>x</span> : <span>...</span>}
             </button>
           )}
         </p>
-        <ul className="mb-8 flex flex-col gap-2 font-semibold">
+        <ul className={classes["recipe-body-icons"]}>
           <li>
             <FaClock className={classes.icon} title="Cooking Time" />
             <span>{cookingTime} minutes</span>
@@ -62,9 +61,7 @@ const Recipe = ({
           </li>
         </ul>
       </div>
-      <button className="w-full bg-lime-600 py-4 text-white font-bold tracking-wider">
-        View Recipe
-      </button>
+      <button className={classes["recipe-view-button"]}>View Recipe</button>
     </Card>
   );
 };

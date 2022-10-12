@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchRecipes } from "../../../store/actionDispatchers/recipes.actionDispatcher";
 import Container from "../../utilities/Container.component";
 import Recipe from "./Recipe.component";
+import classes from "./Recipes.module.css";
 
 const Recipes = () => {
   const { recipes } = useSelector((store) => store.recipes);
@@ -18,7 +19,7 @@ const Recipes = () => {
 
   return (
     <Container>
-      <div className="grid grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-8 mt-10 items-start">
+      <div className={classes["recipes"]}>
         {_.map(
           recipes,
           ({
@@ -30,7 +31,7 @@ const Recipes = () => {
             difficulty,
             serves,
             tags,
-            reviews
+            reviews,
           }) => (
             <Recipe
               key={_id}

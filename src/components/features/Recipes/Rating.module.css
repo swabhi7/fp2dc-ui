@@ -1,0 +1,11 @@
+@tailwind base;
+
+@layer base {
+  .rating div {
+    @apply text-xs text-center flex justify-center items-center;
+  }
+
+  .rating-text {
+    @apply font-bold text-[color:var(--color-primary)];
+  }
+}

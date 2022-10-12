@@ -6,7 +6,7 @@
   }
 
   .navbar {
-    @apply flex justify-between px-8 items-center min-w-full bg-lime-600 text-white h-16 text-lg;
+    @apply flex justify-between px-8 items-center min-w-full text-white h-16 text-lg bg-[color:var(--color-primary)];
   }
 
   .logo {
