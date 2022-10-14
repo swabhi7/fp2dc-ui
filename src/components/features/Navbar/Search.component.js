@@ -30,7 +30,7 @@ const Search = ({ forseExpand = false, searchExpandHandler }) => {
         placeholder="Search"
         className={`${
           forseExpand === false
-            ? classes["search-box"]
+            ? `${classes["search-box"]} ${classes["peer"]}`
             : classes["search-box__forse-expand"]
         }`}
       />

@@ -23,7 +23,6 @@
 
   /* lg scrrens */
   @media (min-width: 1024px) {
-
     .search {
       @apply focus-within:w-80;
     }
@@ -33,7 +32,7 @@
     }
 
     .search-icon {
-      @apply ml-[-13%] text-white text-base;
+      @apply ml-[-13%] text-white text-base peer-focus:ml-[-10%];
     }
   }
 }
