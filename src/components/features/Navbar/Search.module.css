@@ -28,7 +28,7 @@
     }
 
     .search-box {
-      @apply inline-block px-2 py-1 rounded-lg bg-transparent border border-white text-sm placeholder:text-white w-full;
+      @apply inline-block px-2 py-1 rounded-lg bg-transparent border border-white text-sm placeholder:text-white w-full focus:bg-[color:var(--color-secondary)];
     }
 
     .search-icon {
