@@ -23,12 +23,16 @@
 
   /* lg scrrens */
   @media (min-width: 1024px) {
+    .search {
+      @apply transition-all duration-500 ease-in-out w-44 focus-within:w-80;
+    }
+
     .search-box {
-      @apply inline-block px-2 py-1 rounded;
+      @apply inline-block px-2 py-1 rounded-full bg-transparent border border-white text-sm placeholder:text-white w-full focus:bg-[color:var(--color-secondary)] focus:rounded-sm focus:outline-none;
     }
 
     .search-icon {
-      @apply ml-[-10%] text-gray-500;
+      @apply ml-[-15%] text-white text-base peer-focus:ml-[-10%];
     }
   }
 }

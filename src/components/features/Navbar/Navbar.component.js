@@ -12,11 +12,11 @@ const Navbar = () => {
     <div className={classes["navbar"]}>
       <div className={classes["logo"]}>&lt; FP2DC / &gt;</div>
       <div className={classes["menu"]}>
-        {showModal && (
-          <Modal onDismiss={() => setShowModal(false)}>
+        {
+          <Modal show={showModal} onDismiss={() => setShowModal(false)}>
             <Search forseExpand={true} />
           </Modal>
-        )}
+        }
         <Search searchExpandHandler={() => setShowModal(true)} />
         {showSidebar && (
           <Sidebar onDismiss={() => setShowSidebar(false)}>
