@@ -24,15 +24,15 @@
   /* lg scrrens */
   @media (min-width: 1024px) {
     .search {
-      @apply focus-within:w-80;
+      @apply transition-all duration-500 w-44 focus-within:w-80;
     }
 
     .search-box {
-      @apply inline-block px-2 py-1 rounded-lg bg-transparent border border-white text-sm placeholder:text-white w-full focus:bg-[color:var(--color-secondary)] focus:rounded focus:outline-none;
+      @apply inline-block px-2 py-1 rounded-full bg-transparent border border-white text-sm placeholder:text-white w-full focus:bg-[color:var(--color-secondary)] focus:rounded-sm focus:outline-none;
     }
 
     .search-icon {
-      @apply ml-[-13%] text-white text-base peer-focus:ml-[-10%];
+      @apply ml-[-15%] text-white text-base peer-focus:ml-[-10%];
     }
   }
 }
