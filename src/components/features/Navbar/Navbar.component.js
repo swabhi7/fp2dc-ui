@@ -18,14 +18,14 @@ const Navbar = () => {
           </Modal>
         }
         <Search searchExpandHandler={() => setShowModal(true)} />
-        {showSidebar && (
-          <Sidebar onDismiss={() => setShowSidebar(false)}>
+        {
+          <Sidebar show={showSidebar} onDismiss={() => setShowSidebar(false)}>
             <Menu
               insideSidebar={true}
               sidebarCloseHandler={() => setShowSidebar(false)}
             />
           </Sidebar>
-        )}
+        }
         <Menu showSidebarHandler={() => setShowSidebar(true)} />
       </div>
     </div>
