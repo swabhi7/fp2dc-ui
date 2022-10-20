@@ -24,7 +24,7 @@
   /* lg scrrens */
   @media (min-width: 1024px) {
     .search {
-      @apply transition-all duration-500 ease-in-out w-44 focus-within:w-80;
+      @apply transition-all duration-500 ease-in-out w-44 focus-within:w-80 mr-4;
     }
 
     .search-box {
