@@ -1,6 +1,10 @@
 import _ from "lodash";
 import React, { useState } from "react";
 import { FaClock, FaTachometerAlt, FaUtensils } from "react-icons/fa";
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
 import Card from "../../utilities/Card.component";
 import Tags from "./Tags.component";
 import classes from "./Recipe.module.css";
@@ -42,7 +46,11 @@ const Recipe = ({
             <button
               onClick={() => setShowFullDescription(!showFullDescription)}
             >
-              {showFullDescription ? <span>x</span> : <span>...</span>}
+              {showFullDescription ? (
+                <BsFillArrowLeftCircleFill />
+              ) : (
+                <BsFillArrowRightCircleFill />
+              )}
             </button>
           )}
         </p>
