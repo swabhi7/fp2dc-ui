@@ -4,13 +4,17 @@ import Sidebar from "../../utilities/Sidebar.component";
 import Menu from "./Menu.component";
 import classes from "./Navbar.module.css";
 import Search from "./Search.component";
+import logo from "../../../assets/logo.png";
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <div className={classes["navbar"]}>
-      <div className={classes["logo"]}>&lt; FP2DC / &gt;</div>
+      <div className={classes["logo"]}>
+        <img alt="logo" src={logo} />
+        <span>fp2dc</span>
+      </div>
       <div className={classes["menu"]}>
         {
           <Modal show={showModal} onDismiss={() => setShowModal(false)}>

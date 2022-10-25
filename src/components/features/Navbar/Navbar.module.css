@@ -10,7 +10,16 @@
   }
 
   .logo {
-    @apply font-bold;
+    @apply flex gap-1 items-center justify-center;
+  }
+
+  .logo span {
+    @apply text-3xl tracking-wider font-bold text-[color:var(--color-secondary)];
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+
+  .logo img {
+    @apply h-8 rounded-[50%] scale-x-90 bg-[color:var(--color-secondary)] border;
   }
 
   /* sm scrrens */
