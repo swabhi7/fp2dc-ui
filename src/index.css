@@ -37,6 +37,7 @@ text-sm
 text-base
 text-lg
 text-2xl
+text-3xl
 
 Font Weight -
 -------------
@@ -45,6 +46,7 @@ font-semibold
 
 Flex Gap -
 ----------
+gap-1
 gap-2
 gap-3
 gap-4
@@ -56,6 +58,7 @@ rounded-sm
 rounded
 rounded-lg
 rounded-full
+rounded-[50%]
 
 Line Height -
 -------------
