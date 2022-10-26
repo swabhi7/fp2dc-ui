@@ -1,22 +1,10 @@
 import _ from "lodash";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchRecipes } from "../../../store/actionDispatchers/recipes.actionDispatcher";
+import React from "react";
 import Container from "../../utilities/Container.component";
 import Recipe from "./Recipe.component";
 import classes from "./Recipes.module.css";
 
-const Recipes = () => {
-  const { recipes } = useSelector((store) => store.recipes);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    (async () => {
-      dispatch(fetchRecipes());
-    })();
-  }, [dispatch]);
-
+const Recipes = ({ recipes = [] }) => {
   return (
     <Container>
       <div className={classes["recipes"]}>

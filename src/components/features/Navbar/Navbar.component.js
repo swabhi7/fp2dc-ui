@@ -5,16 +5,19 @@ import Menu from "./Menu.component";
 import classes from "./Navbar.module.css";
 import Search from "./Search.component";
 import logo from "../../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <div className={classes["navbar"]}>
-      <div className={classes["logo"]}>
-        <img alt="logo" src={logo} />
-        <span>fp2dc</span>
-      </div>
+      <Link to="/">
+        <div className={classes["logo"]}>
+          <img alt="logo" src={logo} />
+          <span>fp2dc</span>
+        </div>
+      </Link>
       <div className={classes["menu"]}>
         {
           <Modal show={showModal} onDismiss={() => setShowModal(false)}>
