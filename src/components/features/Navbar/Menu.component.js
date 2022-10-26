@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars, FaWindowClose } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import classes from "./Menu.module.css";
 
 const Menu = ({ showSidebarHandler, insideSidebar, sidebarCloseHandler }) => {
@@ -21,11 +22,21 @@ const Menu = ({ showSidebarHandler, insideSidebar, sidebarCloseHandler }) => {
             <FaWindowClose onClick={sidebarCloseHandler} />
           </li>
         )}
-        <li>Recipes</li>
-        <li>Chef Says</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Sign In</li>
+        <li>
+          <Link to="/recipes">Recipes</Link>
+        </li>
+        <li>
+          <Link to="/chefsays">Chef Says</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/signin">Sign In</Link>
+        </li>
       </ul>
     </>
   );
