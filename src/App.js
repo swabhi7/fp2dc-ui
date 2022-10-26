@@ -4,6 +4,7 @@ import AboutPage from "./components/pages/AboutPage.component";
 import ChefSaysPage from "./components/pages/ChefSaysPage.component";
 import ContactPage from "./components/pages/ContactPage.component";
 import HomePage from "./components/pages/HomePage.component";
+import NotFoundPage from "./components/pages/NotFoundPage.component";
 import RecipesPage from "./components/pages/RecipesPage.component";
 import SigninPage from "./components/pages/SigninPage.component";
 
@@ -20,6 +21,7 @@ const App = () => (
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/signin" element={<SigninPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </main>
   </div>
