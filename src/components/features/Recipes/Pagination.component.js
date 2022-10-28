@@ -37,13 +37,13 @@ const Pagination = ({ currentPage, totalPages, maxNumberOfPageButtons }) => {
     <div className={classes["pagination"]}>
       <div className={classes["pagination-buttons"]}>
         {/* Prev Button */}
-        <PaginationButton />
+        <PaginationButton buttonContent="<" />
         {/* Page Buttons */}
         {_.map(pageButtons, (pageButton) => (
-          <span>{pageButton}</span>
+          <PaginationButton key={pageButton} buttonContent={pageButton} />
         ))}
         {/* Next Button */}
-        <PaginationButton />
+        <PaginationButton buttonContent=">" />
       </div>
       <div className={classes["pagination-text"]}>Show Page 1 of 21</div>
     </div>

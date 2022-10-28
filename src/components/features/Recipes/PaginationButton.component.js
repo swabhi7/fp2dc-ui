@@ -1,7 +1,7 @@
 import React from "react";
 
-const PaginationButton = () => {
-  return <div>PaginationButton</div>;
+const PaginationButton = ({ buttonContent }) => {
+  return <button>{buttonContent}</button>;
 };
 
 export default PaginationButton;
