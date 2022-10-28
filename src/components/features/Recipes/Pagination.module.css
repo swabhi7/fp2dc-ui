@@ -1,0 +1,11 @@
+@tailwind base;
+
+@layer base {
+  .pagination {
+    @apply flex flex-col items-center;
+  }
+
+  .pagination-buttons {
+    @apply flex gap-1;
+  }
+}
