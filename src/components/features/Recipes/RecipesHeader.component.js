@@ -7,7 +7,7 @@ const RecipesHeader = () => {
   return (
     <div className="mt-10 flex justify-between">
       <Sorting />
-      <Pagination />
+      <Pagination currentPage={7} totalPages={18} maxNumberOfPageButtons={5} />
       <ItemsPerPage />
     </div>
   );
