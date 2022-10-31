@@ -12,4 +12,18 @@
   .pagination-text {
     @apply text-xs text-gray-500 font-bold;
   }
+
+  /* md scrrens */
+  @media (min-width: 768px) {
+    .pagination-buttons {
+      @apply gap-2;
+    }
+  }
+
+  /* lg scrrens */
+  @media (min-width: 1024px) {
+    .pagination-buttons {
+      @apply gap-3;
+    }
+  }
 }
