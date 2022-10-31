@@ -53,7 +53,7 @@ const Pagination = ({ currentPage, totalPages, maxNumberOfPageButtons }) => {
         {/* Next Button */}
         <PaginationButton buttonContent=">" prevNext={true} />
       </div>
-      <div className={classes["pagination-text"]}>Show Page 1 of 21</div>
+      <div className={classes["pagination-text"]}>Show Page {currentPage} of {totalPages}</div>
     </div>
   );
 };
