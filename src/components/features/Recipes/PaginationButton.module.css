@@ -1,0 +1,15 @@
+@tailwind base;
+
+@layer base {
+  .pagination-button {
+    @apply border px-3 py-2 rounded-[50%] border-gray-400 font-bold;
+  }
+
+  .prev-next {
+    @apply bg-[color:var(--color-secondary)] text-white;
+  }
+
+  .current {
+    @apply bg-[color:var(--color-primary)] text-white;
+  }
+}

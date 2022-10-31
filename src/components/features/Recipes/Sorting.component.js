@@ -1,7 +1,7 @@
 import React from "react";
 
 const Sorting = () => {
-  return <div>Sorting</div>;
+  return <div></div>;
 };
 
 export default Sorting;

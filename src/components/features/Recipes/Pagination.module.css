@@ -6,6 +6,10 @@
   }
 
   .pagination-buttons {
-    @apply flex gap-1;
+    @apply flex gap-1 mb-2 text-xs;
+  }
+
+  .pagination-text {
+    @apply text-xs text-gray-500 font-bold;
   }
 }

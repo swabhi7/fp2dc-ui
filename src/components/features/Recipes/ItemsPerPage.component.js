@@ -1,7 +1,7 @@
 import React from "react";
 
 const ItemsPerPage = () => {
-  return <div>ItemsPerPage</div>;
+  return <div></div>;
 };
 
 export default ItemsPerPage;
